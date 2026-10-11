@@ -1,4 +1,4 @@
-package uk.ac.westminster.productsapi;
+package uk.ac.westminster.products_api;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class ProductController {
 
     @GetMapping("/{id}")
-    public uk.ac.westminster.productsapi.Product getById(@PathVariable Long id) {
-        return new uk.ac.westminster.productsapi.Product(id, "Laptop", 999.99);
+    public uk.ac.westminster.products_api.Product getById(@PathVariable Long id) {
+        return new uk.ac.westminster.products_api.Product(id, "Laptop", 999.99);
     }
 }
